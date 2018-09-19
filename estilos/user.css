@@ -1,0 +1,558 @@
+/*
+ *
+ * System css for user area
+ *
+ */
+
+/*
+ * Ajax
+ */
+#ncore_ajax_wait
+{
+    display: none;
+}
+
+.ncore_waiting
+{
+    cursor: wait;
+    z-index: 999999;
+    background: url(../image/ui/ajax-loader_small.gif) left top transparent no-repeat;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+span.ncore_waiting {
+    display: inline-block;
+    background: url(../image/ui/ajax-loader_small.gif) left bottom transparent no-repeat;
+}
+
+#ncore_ajax_wait.ncore_waiting
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: wait;
+    z-index: 999999;
+    background: url(../image/ui/ajax-loader_big.gif) center transparent no-repeat;
+}
+
+
+/*
+ * Tooltips
+ */
+.ncore_tooltip_contents,
+div.ncore_tooltip_contents,
+#wpwrap div.ncore_tooltip_contents
+{
+    display: none;
+
+}
+
+.ncore_with_tooltip
+{
+    cursor: pointer;
+}
+
+img.ncore_tooltip
+{
+    box-shadow: none;
+    border: none;
+}
+
+.ncore_texttoken
+{
+    white-space: nowrap;
+}
+
+.ncore_code
+{
+    font-family: monospace;
+}
+
+/*
+ * Forms and inputs
+ */
+
+button.ncore_button
+{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+table.ncore_form_table.ncore_user div
+{
+    float: left;
+}
+
+.ncore_form_field label {
+    display: inline-block;
+    float: none !important;
+    clear:both;
+}
+
+
+table.ncore_form_table.ncore_user th[scope="row"]
+{
+    text-align: left;
+    vertical-align: middle;
+    padding-right: 6px;
+    margin-bottom: 6px;
+}
+
+table.ncore_form_table.ncore_user th,
+table.ncore_form_table.ncore_user td
+{
+    border: none;
+}
+
+.ncore_user_form div.ncore_input input[type="checkbox"]
+{
+    width: auto !important;
+    padding: 0!important;
+}
+
+table.ncore_form_table.ncore_user input
+{
+    margin: 0 0 10px 0;
+    width: 15em;
+}
+
+table.ncore_form_table th,
+table.ncore_form_table td
+{
+    background: inherit;
+    color: inherit;
+    padding: inherit;
+    margin: inherit;
+    white-space: nowrap;
+}
+
+table.ncore_form_table th[scope=row]
+{
+    white-space: normal;
+}
+
+
+.ncore_user input[type=submit]
+{
+    cursor: pointer;
+}
+
+.ncore_error.ncore_user.updated
+{
+    background-color: #C3FF88;
+    border: solid 1px #8DFF1C;
+}
+
+.ncore_error.ncore_user.error
+{
+    background-color: #FFA0A0;
+    border: solid 1px #F04040;
+}
+
+div.ncore_error
+{
+    padding: 6px;
+    margin: 6px;
+}
+
+div.ncore_clear
+{
+    clear: both;
+}
+
+input.ncore_code
+{
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+}
+
+.ncore_hidden
+{
+    display: none;
+}
+
+
+.ncore_pwstrength {
+    background-color: #EEEEEE;
+    border-color: #DDDDDD !important;
+    border-width: 1px;
+    border-style: solid;
+    width: 12em;
+    text-align: center;
+    display: inline-block;
+    padding: 0.7ex;
+}
+
+.ncore_hidden {
+    display:none;
+}
+
+.ncore_pwstrength.mismatch,
+.ncore_pwstrength.bad {
+    background-color: #FFA0A0;
+    border-color: #F04040 !important;
+    font-weight: bold;
+}
+.ncore_pwstrength.weak {
+    background-color: #FFB78C;
+    border-color: #FF853C !important;
+    font-weight: bold;
+}
+.ncore_pwstrength.good {
+    background-color: #FFEC8B;
+    border-color: #FFCC00 !important;
+}
+.ncore_pwstrength.strong {
+    background-color: #C3FF88;
+    border-color: #8DFF1C !important;
+}
+
+
+/*
+ * Ajax forms
+ */
+form.ncore_ajax_form div.ncore_input
+{
+    margin-left: 0.25em;
+    padding-left: 0;
+}
+
+form.ncore_ajax_form div.ncore_radiobutton_list label
+{
+    float: left;
+    padding-right: 5px;
+}
+
+form.ncore_ajax_form div.ncore_radiobutton_list input
+{
+    width: auto;
+    min-width: auto;
+    margin-right: 0;
+}
+
+form.ncore_ajax_form table.ncore_form_table.ncore_user tr
+{
+    height: 40px;
+}
+
+
+/*
+ * Tables
+ */
+
+div.ncore_user div.tablenav
+{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+div.ncore_user div.tablenav .displaying-num
+{
+    padding-right: 6px;
+}
+
+div.ncore_user table.ncore_list_table
+{
+    margin-bottom: 0;
+}
+
+div.ncore_user .tablenav.top
+{
+}
+
+div.ncore_user .tablenav.bottom
+{
+    margin-bottom: 16px;
+}
+
+div.ncore_user table.ncore_list_table th
+{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+div.ncore_user table.ncore_list_table td
+{
+    padding-right: 6px;
+}
+
+div.ncore_user table.ncore_list_table th[scope=col]
+{
+    padding: 0px 10px 0 0;
+}
+
+table.ncore_table th[scope=row]
+{
+    text-align: left;
+}
+
+table.ncore_table .column-section
+{
+    width: 10%;
+}
+
+table.ncore_table .column-flags
+{
+    width: 20%;
+}
+
+table.ncore_table img
+{
+    box-shadow: none;
+}
+
+table.ncore_table button
+{
+    white-space: nowrap;
+}
+
+.ncore_user.ncore_ajax_dialog th,
+.ncore_user.ncore_ajax_dialog td
+{
+    vertical-align: middle;
+}
+
+
+.ncore_user.ncore_ajax_dialog td input
+{
+    margin: 5px 5px 5px 0;
+}
+
+.ncore_user.ncore_ajax_dialog .ncore_inner div
+{
+    float: left;
+}
+
+.ncore_user.ncore_ajax_dialog div.instruction
+{
+    line-height: 100%;
+    font-size: 14px;
+}
+
+div.ncore_affiliate_footer
+{
+    font-size: 11px;
+    padding: 8px 6px 16px 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+ul.digimember_product_links
+{
+    list-style: disc inside;
+}
+
+
+
+div.ncore_user_form_container
+{
+    display: inline-block;
+    text-align: left;
+}
+
+div.ncore_user_form_container div
+{
+    text-align: left;
+}
+
+
+
+.ncore_hint
+{
+    font-size: 80%;
+}
+
+
+
+.ncore_image_button
+{
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+
+
+.ncore_dialog_show_page {
+    max-height: 600px;
+    overflow: auto;
+}
+
+
+
+/*
+ * Shortcode digimember_login_info
+ */
+
+.digimember_login_info_container
+{
+    display: inline-block;
+    width: 212px;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.digimember_login_info_container div,
+.digimember_login_info_container img
+{
+    padding: 0;
+    margin: 0;
+}
+
+.digimember_login_info
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.digimember_image
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+}
+
+div.digimember_howdi
+{
+    position: absolute;
+    left: 64px;
+    top: 0;
+    width: 148px;
+    height: 32px;
+    padding-left: 6px;
+    line-height: 110%;
+}
+
+
+span.digimember_display_name
+{
+    white-space: nowrap;
+}
+
+div.digimember_logoff
+{
+    position: absolute;
+    left: 64px;
+    bottom: 0px;
+    width: 128px;
+    vertical-align: bottom;
+    padding-left: 6px;
+}
+
+form.ncore_user_form
+{
+    font-size: 12px;
+}
+
+form.ncore_user_form label
+{
+    opacity: 0.8;
+}
+
+form.ncore_user_form div.ncore_form_label
+{
+    margin-top: 10px;
+}
+
+form.ncore_user_form div.digimember_login_label:first-child
+{
+    margin-top: 0px;
+}
+
+form.ncore_user_form .ncore_input,
+form.ncore_user_form .required
+{
+    float: left;
+    height: auto;
+}
+
+.ncore_new_password_link
+{
+    font-size: 80%;
+}
+
+form.ncore_user_form input[type="text"],
+form.ncore_user_form input[type="password"]
+{
+    height: 25px;
+    margin: 0 0 5px;
+    padding: 2px;
+    width: 166px;
+}
+
+form.ncore_user_form input[type="checkbox"]
+{
+    border: none;
+}
+
+form.ncore_user_form .ncore_form_buttons
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+form.ncore_user_form .ncore_error.error {
+    margin-left: 0;
+}
+
+.digimember_login_info img.avatar
+{
+    position: static !important;
+}
+
+
+
+#user_signup_form_form table.ncore_form_table th
+{
+    width: auto;
+}
+
+
+
+.digimember_api_reference
+{
+    line-height: 100%;
+    font-family: monospace;
+}
+
+
+/*
+ * Modules
+ */
+.digimember_product_headline
+{
+    font-size: 140%;
+    font-weight: bold;
+}
+.digimember_module_headline
+{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.digimember_module_menu ul.digimember_module_contents li.digimember_selected
+{
+    font-weight: bold;
+}
